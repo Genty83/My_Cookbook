@@ -1,0 +1,16 @@
+/******* GOOGLE FONT IMPORTS *******/
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+/******* ROOT VARIABLES *******/
+:root {
+    --font-dark-clr: #f1f1f1
+}
+
+/******* GLOBAL STYLES *******/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: "Mukta", sans-serif;
+}
