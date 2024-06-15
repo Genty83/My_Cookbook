@@ -7,9 +7,39 @@
     <!-- Title Tag -->
     <title>{{page_title}}</title>
     <!-- Link tags -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  type="text/css">
      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
 </head>
 <body>
-    hello
+    
+    <!-- Header start -->
+    <header class="header">
+        <!-- Logo -->
+        <a class="logo" href="{{url_for('home')}}"><i class="fas fa-utensils"></i>My Cookbook</a>
+        <!-- Navbar Start -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('home')}}">View Recipes</a></li>
+                <li><a href="{{url_for('home')}}">Create Recipe</a></li>
+                <li><a href="{{url_for('home')}}">About Us</a></li>
+            </ul>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Nav btn wrapper start -->
+        <div class="nav-btn-wrapper">
+            <a href="#" class="btn nav-btn"><i class="fas fa-user"></i>Sign In</a>
+            <a href="#" class="btn nav-btn"><i class="fas fa-user-plus"></i>Sign Up</a>
+        </div>
+        <!-- Nav btn wrapper end -->
+
+        <!-- Nav icon btn wrapper start -->
+        <div class="nav-icon-btn-wrapper">
+            <a id="nav-menu-btn" class="btn nav-icon-btn" href="#" ><i class="fas fa-bars"></i></a>
+        </div>
+        <!-- Nav icon btn wrapper end -->
+    </header>
+    <!-- Header End-->
 </body>
 </html>
