@@ -7,7 +7,7 @@
     <!-- Title Tag -->
     <title>{{page_title}}</title>
     <!-- Link tags -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  type="text/css">
      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
 </head>
 <body>
@@ -48,5 +48,38 @@
         {% endblock %}
     </main>
     <!-- Main content end -->
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <!-- Footer top content start -->
+        <div class="footer-top-content">
+
+            <div class="footer-top-wrapper">
+                <!-- Logo -->
+                 <a id="footer-logo" class="logo" href="{{url_for('home')}}"><i class="fas fa-utensils"></i>My Cookbook</a>
+                 <div class="social-icons-wrapper">
+                    <a class="social-btn" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="social-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="social-btn" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="social-btn" href="#"><i class="fa-brands fa-youtube"></i></a>
+                 </div>
+            </div>
+            <div class="seperator"></div>
+        </div>
+        <!-- Footer top content end -->
+
+        <!-- Footer middle content start -->
+        <div class="footer-middle-content">
+
+        </div>
+        <!-- Footer middle content end -->
+
+        <!-- Footer bottom content start -->
+        <div class="footer-bottom-content">
+            <p>&#169; All rights reserved - Craig Gent</p>
+        </div>
+        <!-- Footer bottom content end -->
+    </footer>
+    <!-- Footer end -->
 </body>
 </html>
