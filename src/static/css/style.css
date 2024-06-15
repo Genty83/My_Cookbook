@@ -8,6 +8,8 @@
     --font-light-clr: #F7F7F7;
     --primary-one-clr: #00966B;
     --primary-two-clr: #00D59A;
+    --footer-one-clr: #252529;
+    --footer-two-clr: #1f1f1f;
     --base-transition: all 0.8s ease-out 0.3s;
     --base-radius: 5px;
 }
@@ -155,6 +157,63 @@
     background-color: var(--primary-two-clr);
 }
 
+/******* FOOTER STYLING *******/
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: var(--footer-one-clr);
+    color: var(--font-light-clr);
+}
+.footer-top-content {
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.footer-top-wrapper {
+    padding: 0.5rem 0;
+}
+.social-icons-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#footer-logo {
+    color: var(--font-light-clr);
+    justify-content: center;
+}
+.seperator {
+    height: 1px;
+    width: 100%;
+    background-color: var(--font-medium-clr);
+}
+.footer-bottom-content {
+    background-color: var(--footer-two-clr);
+    height: 40px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Social Button */
+.social-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 100vh;
+    text-decoration: none;
+    color: var(--font-medium-clr);
+    border: 2px solid var(--font-medium-clr);
+    display: grid;
+    place-items: center;
+    transition: var(--base-transition);
+}
+.social-btn:hover {
+    color: var(--primary-two-clr);
+    border: 2px solid var(--primary-two-clr);
+    box-shadow: 0px 0px 7px var(--primary-two-clr);
+}
 
 /******* MEDIA QUERIES *******/
 @media all and (min-width: 760px) {
