@@ -1,5 +1,5 @@
 """
-Main runnale file: This file is the main file for running the flask appliction
+Main runnable file: This file is the main file for running the flask appliction
 """
 
 # IMPORTS
