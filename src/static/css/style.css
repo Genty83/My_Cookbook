@@ -112,13 +112,65 @@
     color: var(--font-medium-clr);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.4rem;
     border-radius: var(--base-radius);
     transition: var(--base-transition);
 }
 
+/******* HERO SECTION STYLING *******/
+/* Hero wrapper */
+.hero {
+    background-image: url('https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--font-light-clr);
+    padding: 3%;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--primary-two-clr);
+}
+.hero h2 {
+    font-size: 1.8rem;
+    color: var(--font-medium-clr);
+}
+/* Hero btn */
+.hero-btn {
+    border: none;
+    background-color: var(--primary-one-clr);
+    color: var(--font-light-clr);
+    height: 45px;
+    width: 170px;
+}
+.hero-btn:hover {
+    background-color: var(--primary-two-clr);
+}
+
 
 /******* MEDIA QUERIES *******/
+@media all and (min-width: 760px) {
+    /* Hero wrapper */
+    .hero {
+        background-image: linear-gradient(to right, #fff 30%, #ffffff00),
+        url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600');
+        text-align: left;
+        align-items: start;
+        padding-right: 65%;
+    }
+    .hero p {
+        color: var(--font-medium-clr);
+    }
+}
+
 @media all and (min-width: 1260px) {
     /* Header */
     .header {
