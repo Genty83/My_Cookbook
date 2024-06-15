@@ -3,11 +3,11 @@
 """
 
 # IMPORTS
-from src import app, db
+from src import app
 from flask import render_template
 
 
 # Homepage
-@app.route
+@app.route("/")
 def home():
-    return 
+    return render_template("base.html")
