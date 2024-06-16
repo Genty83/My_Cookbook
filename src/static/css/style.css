@@ -235,6 +235,99 @@
    width: 60%;
 }
 
+/******* BANNER STYLING *******/
+.banner {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-overlay {
+    background:  linear-gradient(to right, #24242b 34%, #03030399);
+    position: absolute;
+    left: 0;
+    top: 0;
+    float: left;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: var(--font-medium-clr);
+    padding: 2%;
+}
+.banner-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--font-medium-clr);
+    width: 100%;
+    height: 100%;
+    padding: 0 20%;
+}
+.banner-title {
+    font-size: 3.2rem;
+    color: var(--primary-one-clr);
+}
+
+/******* ACCOUNTS SECTION STYLING *******/
+.accounts-section {
+    padding: 5%;
+}
+
+/******* ACCOUNTS FORM STYLING *******/
+.accounts-form {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--base-radius);
+    box-shadow: 3px 3px 7px var(--font-medium-clr);
+    display: grid;
+    gap: 0.4rem;
+    padding: 2%;
+}
+.accounts-form h1 {
+    font-size: 2rem;
+    color: var(--primary-one-clr);
+}
+.accounts-form label {
+    color: var(--font-medium-clr);
+}
+.submit-btn {
+    border: none;
+    border-radius: var(--base-radius);
+    height: 35px;
+    width: 160px;
+    background-color: var(--primary-one-clr);
+    color: var(--font-light-clr);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+/******* INPUT BOX STYLING *******/
+.input {
+    height: 35px;
+    outline: none;
+    border: 1px solid var(--font-medium-clr);
+    border-radius: var(--base-radius);
+    transition: var(--base-transition);
+    padding-left: 0.5rem;
+}
+.input:hover {
+    border: 1px solid var(--primary-two-clr);
+}
+.input:focus {
+    box-shadow: 0px 0px 7px var(--primary-one-clr);
+}
+.input::placeholder {
+    color: var(--font-medium-clr);
+    font-size: 0.8rem;
+}
+
 /******* MEDIA QUERIES *******/
 @media all and (min-width: 760px) {
     /* Hero wrapper */
@@ -247,6 +340,11 @@
     }
     .hero p {
         color: var(--font-medium-clr);
+    }
+
+    /* Accounts section */
+    .accounts-section {
+        padding: 5% 15%;
     }
 }
 
@@ -266,7 +364,7 @@
     .navbar {
         display: flex;
     }
-    /**/
+    /* Footer */
     .footer-top-wrapper {
         display: flex;
         justify-content: space-between;
