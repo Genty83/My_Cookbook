@@ -103,6 +103,7 @@ Home page | ![Homepage Mobile](./readme-images/home-mobile-wireframe.png) | ![Ho
 
 * Hero image on mobile devices: "Green Leafy Vegetable Dish in Gray Steel Bowl With Fork" by Valeria Boltneva [Image Link](https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=600)
 * Hero image on Desktop/Tablet devices: "White and Brown Cooked Dish on White Ceramic Bowls" by Chan Walrus [Image Link](https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600)
+* Accounts banner image: "Strawberries [Image Link](https://images.pexels.com/photos/1132558/pexels-photo-1132558.jpeg?auto=compress&cs=tinysrgb&w=600)
 
 [Back to top ⇧](#My-Cookbook)
 
