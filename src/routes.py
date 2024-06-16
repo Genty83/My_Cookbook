@@ -32,6 +32,6 @@ def about():
 
 
 # Accounts
-@app.route("/accounts")
+@app.route("/accounts", methods=["GET", "POST"])
 def accounts():
     return render_template("accounts.html")
