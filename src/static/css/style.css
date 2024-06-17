@@ -22,6 +22,12 @@
     font-size: 1rem;
     font-family: "Mukta", sans-serif;
 }
+a {
+    text-decoration: none;
+}
+h2 {
+    font-size: 1.8rem;
+}
 
 /******* HEADER/NAVBAR STYLING *******/
 .header {
@@ -75,7 +81,6 @@
 }
 .navbar ul li a {
     color: var(--font-dark-clr);
-    text-decoration: none;
 }
 .navbar ul li a::after {
     content: '';
@@ -289,44 +294,93 @@
     box-shadow: 3px 3px 7px var(--font-medium-clr);
     display: grid;
     gap: 0.4rem;
+    padding: 1%;
+}
+.form-top-content {
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(to right bottom, #F7F7F7 15%, #00966B 65%);
+    border-radius: var(--base-radius);
     padding: 2%;
 }
-.accounts-form h1 {
-    font-size: 2rem;
+.account-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 0.5rem;
+    color: var(--font-light-clr);
+}
+#form-sign-in-btn {
+    height: 45px;
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid var(--font-light-clr);
+    background: transparent;
+}
+#form-sign-in-btn:hover {
+    background: #ffffff55;
+}
+.form-bottom-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2%;
+    color: var(--font-medium-clr);
+}
+.form-header-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.form-socials-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.form-socials-wrapper a {
+    color: var(--font-medium-clr);
+}
+.input {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid var(--font-medium-clr);
+    display: flex;
+    align-items: center;
+}
+.input i {
     color: var(--primary-one-clr);
 }
-.accounts-form label {
-    color: var(--font-medium-clr);
-}
-.submit-btn {
-    border: none;
-    border-radius: var(--base-radius);
-    height: 35px;
-    width: 160px;
-    background-color: var(--primary-one-clr);
-    color: var(--font-light-clr);
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-/******* INPUT BOX STYLING *******/
-.input {
-    height: 35px;
+.input input {
     outline: none;
-    border: 1px solid var(--font-medium-clr);
-    border-radius: var(--base-radius);
-    transition: var(--base-transition);
-    padding-left: 0.5rem;
-}
-.input:hover {
-    border: 1px solid var(--primary-two-clr);
-}
-.input:focus {
-    box-shadow: 0px 0px 7px var(--primary-one-clr);
-}
-.input::placeholder {
+    border: none;
+    background-color: transparent;
+    width: 100%;
     color: var(--font-medium-clr);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    padding-left: 0.4rem;
 }
+.input input::placeholder {
+    color: var(--font-medium-clr);
+}
+/* Form btn */
+.form-btn {
+    height: 45px;
+    border-radius: 100vh;
+    border: none;
+    cursor: pointer;
+    color: var(--font-light-clr);
+    background: linear-gradient(to right bottom, #00966B 30%, #00D59A);
+    transition: var(--base-transition);
+}
+.form-btn:hover {
+    box-shadow: 0px 0px 10px var(--font-medium-clr);
+}
+
 
 /******* MEDIA QUERIES *******/
 @media all and (min-width: 760px) {
@@ -345,6 +399,11 @@
     /* Accounts section */
     .accounts-section {
         padding: 5% 15%;
+    }
+    /* Accounts form */
+    .form-header-content {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -377,5 +436,15 @@
     }
     .footer-middle-wrapper {
         width: 30%;
+    }
+    /**/
+    .accounts-form {
+        display: flex;
+        height: 500px;
+    }
+    .form-top-content {
+        width: 50%;
+        height: 100%;
+        flex-shrink: 0;
     }
 }
