@@ -17,21 +17,57 @@
 
     <!-- Accounts user form start -->
     <form class="accounts-form" action="" method="post">
-        <!-- Logo -->
-        <a class="logo" href="{{url_for('home')}}"><i class="fas fa-utensils"></i>My Cookbook</a>
+        
+        <!-- Top Content start -->
+        <div class="form-top-content">
 
-        <h1>Create Account</h1>
+            <!-- Logo -->
+            <a id="form-logo" class="logo" href="{{url_for('home')}}"><i class="fas fa-utensils"></i>My Cookbook</a>
+            <div class="account-info-wrapper">
+                <h2>Welcome!!</h2>
+                <P>Already have an account?</P>
+                <button id="form-sign-in-btn" class="form-btn" type="button">Sign In</button>
+            </div>
+        </div>
+        <!-- Top Content end -->
+    
+        `<!-- Bottom Content start -->
+        <div class="form-bottom-content">
 
-        <label for="username">Username</label>
-        <input class="input" type="text" name="username" id="username" placeholder="Enter Name:" required>
+            <div class="form-header-content">
+                <h2>Create Account</h2>
+                <div class="form-socials-wrapper">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
 
-        <label for="email">Email</label>
-        <input class="input"  type="email" name="email" id="email" placeholder="Enter Email:" required>
-
-        <label for="password">Password</label>
-        <input class="input"  type="password" name="password" placeholder="Enter Password:" id="password">
-
-        <input class="submit-btn" type="submit" value="Submit">
+            <div class="input">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="fname" placeholder="Enter First Name:" required>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="lname" placeholder="Enter Last Name:" required>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="fname" placeholder="Enter User Name:" required>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" placeholder="Enter Email:" required>
+            </div>
+            <div class="input">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="Password" placeholder="Enter Password:" required>
+            </div>
+            <!-- Create account btn -->
+             <button class="form-btn" type="submit">Create Account</button>
+        </div>
+        <!-- Bottom Content end -->
+    
     </form>
     <!-- Accounts user form end -->
 
