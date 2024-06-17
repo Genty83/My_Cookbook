@@ -9,6 +9,8 @@
     <!-- Link tags -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  type="text/css">
      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
+     <!-- Script tags -->
+      <script defer src="{{ url_for('static', filename='js/main.js') }}"></script>
 </head>
 <body>
     
@@ -29,7 +31,7 @@
 
         <!-- Nav btn wrapper start -->
         <div class="nav-btn-wrapper">
-            <a href="#" class="btn nav-btn"><i class="fas fa-user"></i>Sign In</a>
+            <a href="#" class="btn nav-btn login-btns"><i class="fas fa-user"></i>Sign In</a>
             <a href="{{ url_for('accounts') }}" class="btn nav-btn"><i class="fas fa-user-plus"></i>Sign Up</a>
         </div>
         <!-- Nav btn wrapper end -->
@@ -41,6 +43,28 @@
         <!-- Nav icon btn wrapper end -->
     </header>
     <!-- Header End-->
+
+    <!-- Sign in form start -->
+     <form class="sign-in-form" action="#">
+    
+        <div class="sign-in-form-header-wrapper">
+            <h2>Sign In</h2>
+            <i id="form-close-btn" class="fa-solid fa-close"></i>
+        </div>
+
+        <div class="input">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="fname" placeholder="Enter User Name:" required>
+        </div>
+        <div class="input">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" name="Password" placeholder="Enter Password:" required>
+        </div>
+        <!-- Sign in btn -->
+        <button class="form-btn" type="submit">Sign In</button>
+
+     </form>
+    <!-- Sign in form end -->
 
     <!-- Main content start -->
     <main>
