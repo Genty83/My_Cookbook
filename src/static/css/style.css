@@ -22,11 +22,17 @@
     font-size: 1rem;
     font-family: "Mukta", sans-serif;
 }
+body {
+    position: relative;
+}
 a {
     text-decoration: none;
 }
 h2 {
     font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.4rem;
 }
 
 /******* HEADER/NAVBAR STYLING *******/
@@ -381,6 +387,40 @@ h2 {
     box-shadow: 0px 0px 10px var(--font-medium-clr);
 }
 
+/******* SIGN IN FORM *******/
+.sign-in-form {
+    width: 0px;
+    height: 0px;
+    border-radius: var(--base-radius);
+    box-shadow: 3px 3px 7px var(--font-medium-clr);
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    gap: 1rem;
+    padding: 1%;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    opacity: 0;
+    transform: translate(-50%, -100%);
+    overflow: hidden;
+    transition: var(--base-transition);
+    z-index: 99999;
+}
+.sign-in-form-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    color: var(--font-medium-clr);
+}
+#form-close-btn {
+    transition: var(--base-transition);
+    cursor: pointer;
+}
+#form-close-btn:hover {
+    color: #f20000;
+}
 
 /******* MEDIA QUERIES *******/
 @media all and (min-width: 760px) {
