@@ -2,8 +2,10 @@
  This template contains the form for creating a new user account
 -->
 
-{% extends "base.html" %}
+{% extends "base/base.html" %}
+
 {% block content %}
+
 <section class="banner">
     <img src="https://images.pexels.com/photos/1132558/pexels-photo-1132558.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Accounts image">
     <div class="banner-overlay">
@@ -15,62 +17,12 @@
 
 <section class="accounts-section">
 
-    <!-- Accounts user form start -->
-    <form class="accounts-form" action="" method="post">
-        
-        <!-- Top Content start -->
-        <div class="form-top-content">
-
-            <!-- Logo -->
-            <a id="form-logo" class="logo" href="{{url_for('home')}}"><i class="fas fa-utensils"></i>My Cookbook</a>
-            <div class="account-info-wrapper">
-                <h2>Welcome!!</h2>
-                <P>Already have an account?</P>
-                <button id="form-sign-in-btn" class="form-btn login-btns" type="button">Sign In</button>
-            </div>
-        </div>
-        <!-- Top Content end -->
-    
-        `<!-- Bottom Content start -->
-        <div class="form-bottom-content">
-
-            <div class="form-header-content">
-                <h2>Create Account</h2>
-                <div class="form-socials-wrapper">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-
-            <div class="input">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" name="fname" placeholder="Enter First Name:" required>
-            </div>
-            <div class="input">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" name="lname" placeholder="Enter Last Name:" required>
-            </div>
-            <div class="input">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" name="fname" placeholder="Enter User Name:" required>
-            </div>
-            <div class="input">
-                <i class="fa-solid fa-envelope"></i>
-                <input type="email" name="email" placeholder="Enter Email:" required>
-            </div>
-            <div class="input">
-                <i class="fa-solid fa-key"></i>
-                <input type="password" name="Password" placeholder="Enter Password:" required>
-            </div>
-            <!-- Create account btn -->
-             <button class="form-btn" type="submit">Create Account</button>
-        </div>
-        <!-- Bottom Content end -->
-    
-    </form>
-    <!-- Accounts user form end -->
+    {% include "base/account_form.html" %}
 
 </section>
+
+<!-- Footer -->
+{% include "base/footer.html" %}
+
 {% endblock %}
 
