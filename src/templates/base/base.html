@@ -22,9 +22,9 @@
         <nav class="navbar">
             <ul>
                 <li><a href="{{url_for('home')}}">Home</a></li>
-                <li><a href="{{url_for('home')}}">View Recipes</a></li>
-                <li><a href="{{url_for('home')}}">Create Recipe</a></li>
-                <li><a href="{{url_for('home')}}">About Us</a></li>
+                <li><a href="{{url_for('view_recipes')}}">View Recipes</a></li>
+                <li><a href="{{url_for('create_recipe')}}">Create Recipe</a></li>
+                <li><a href="{{url_for('about')}}">About Us</a></li>
             </ul>
         </nav>
         <!-- Navbar End -->
@@ -73,55 +73,5 @@
     </main>
     <!-- Main content end -->
 
-    <!-- Footer start -->
-    <footer class="footer">
-        <!-- Footer top content start -->
-        <div class="footer-top-content">
-
-            <div class="footer-top-wrapper">
-                <!-- Logo -->
-                 <a id="footer-logo" class="logo" href="{{url_for('home')}}"><i class="fas fa-utensils"></i>My Cookbook</a>
-                 <div class="social-icons-wrapper">
-                    <a class="social-btn" href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a class="social-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="social-btn" href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a class="social-btn" href="#"><i class="fa-brands fa-youtube"></i></a>
-                 </div>
-            </div>
-            <div class="seperator"></div>
-        </div>
-        <!-- Footer top content end -->
-
-        <!-- Footer middle content start -->
-        <div class="footer-middle-content">
-            <div class="footer-middle-wrapper">
-                <h3>Useful Links</h3>
-                <div id="footer-seperator"  class="seperator"></div>
-                <a class="footer-link" href="#">Home</a>
-                <a class="footer-link" href="#">View Recipes</a>
-                <a class="footer-link" href="#">Create Recipe</a>
-                <a class="footer-link" href="#">About Us</a>
-                <a class="footer-link" href="#">Accounts</a>
-            </div>
-            <div class="footer-middle-wrapper">
-                <h3>About Us</h3>
-                <div id="footer-seperator" class="seperator"></div>
-                <p>
-                    My Cookbook is a website for creating your own personal cookbook.
-                    Create and share yours recipes with friends and family on social media or view 
-                    other peoples amazing recipes.
-                    Build your cooking portfolio!!
-                </p>
-            </div>
-        </div>
-        <!-- Footer middle content end -->
-
-        <!-- Footer bottom content start -->
-        <div class="footer-bottom-content">
-            <p>&#169; All rights reserved - Craig Gent</p>
-        </div>
-        <!-- Footer bottom content end -->
-    </footer>
-    <!-- Footer end -->
 </body>
 </html>
